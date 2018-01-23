@@ -3,6 +3,25 @@
 <head>
  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 <title>Forward</title>
+ 
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function(){
+   
+   //Forward randomly to one of the URLs below
+   var listOfUrls = [
+    "https://amazonas.fzi.de/limesurvey2/index.php/579265?lang=en",
+    "https://amazonas.fzi.de/limesurvey2/index.php/866665?lang=en",
+    "https://amazonas.fzi.de/limesurvey2/index.php/481388?lang=en",
+    "https://amazonas.fzi.de/limesurvey2/index.php/638618?lang=en"
+    ];
+   
+   var index = Math.floor(Math.random() * 4);
+   
+   window.location = listOfUrls[index];
+  });
+  
+ </script>
 </head>
 <body>
 <p>
