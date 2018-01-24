@@ -16,7 +16,12 @@
     "https://amazonas.fzi.de/limesurvey2/index.php/638618?lang=en"
     ];
    
-   var index = Math.floor(Math.random() * 4);
+   listOfUrls = [
+    "https://amazonas.fzi.de/limesurvey2/index.php/866665?lang=en",
+    "https://amazonas.fzi.de/limesurvey2/index.php/481388?lang=en"
+    ];
+   
+   var index = Math.floor(Math.random() * listOfUrls.length);
    
    window.location = listOfUrls[index];
   });
